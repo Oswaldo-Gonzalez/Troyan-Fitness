@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import CustomButtom from '../components/CustomButtom';
 
@@ -8,6 +9,9 @@ export default function App({ navigation }) {
   function registro() {
       navigation.navigate("Registro");
   }
+  function main() {
+    navigation.navigate("Main");
+  }
 
   return (
     <View style={styles.container}>
@@ -15,7 +19,8 @@ export default function App({ navigation }) {
       <TextInput style={styles.input_login} placeholder="Usuario" />
       <TextInput style={styles.input_login} placeholder="Contraseña" secureTextEntry={true}/>
       
-      <CustomButtom text={"Ingresar"} color={"black"} action={registro}/>
+      <CustomButtom text={"Ingresar"} color={"black"} action={main}/>
+      <SafeAreaView></SafeAreaView>
       <CustomButtom text={"Registro"} color={"black"} action={registro}/>
 
       <StatusBar style="auto" />

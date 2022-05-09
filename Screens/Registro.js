@@ -4,13 +4,19 @@ import { StyleSheet, Text, View, TextInput } from 'react-native';
 import CustomButtom from '../components/CustomButtom';
 
 export default function App({ navigation }) {
+  
+  function main() {
+    navigation.navigate("Main");
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.login_header}>Registrar</Text>
+      <TextInput style={styles.input_login} placeholder="Correo Electronico" />
       <TextInput style={styles.input_login} placeholder="Usuario" />
       <TextInput style={styles.input_login} placeholder="Contraseña" secureTextEntry={true}/>
       
-      <CustomButtom text={"Registro"} color={"black"}/>
+      <CustomButtom text={"Registro"} color={"black"} action={main}/>
 
       <StatusBar style="auto" />
     </View>
