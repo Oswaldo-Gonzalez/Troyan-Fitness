@@ -9,6 +9,7 @@ const Stack = createStackNavigator();
 import Login from './Screens/Login';
 import Registro from './Screens/Registro';
 import Main from './Screens/Main';
+import Profile from './Screens/Profile';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="Registro" component={Registro}/>
         <Stack.Screen name="Main" component={Main}/>
+        <Stack.Screen name="Profile" component={Profile}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

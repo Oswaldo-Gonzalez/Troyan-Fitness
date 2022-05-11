@@ -1,11 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, Image, ImageBackground, TouchableOpacity,SafeAreaView } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons'
 
 
 export default function Main({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-        <Text style={styles.header}>Bienvenido</Text>    
+
+        <SafeAreaView style={{flexDirection: 'row', justifyContent: 'flex-end', justifyContent: 'center', width:'100%'}}>
+            <Text style={styles.header}>Bienvenido</Text>
+            <Icon style={{position:'absolute', right:'5%'}}
+                name='person-circle-outline'
+                size={50}
+                onPress={()=> navigation.navigate("Profile")}
+            />
+        </SafeAreaView>    
                     
         <TouchableOpacity onPress={()=> navigation.navigate("Login")}>
             <SafeAreaView style={styles.box}>
@@ -62,7 +71,8 @@ const styles = StyleSheet.create({
   header:{
     fontSize:30, 
     marginBottom:40, 
-    fontWeight:'bold'
+    marginTop:5,
+    fontWeight:'bold',
   },
   content:{
     height: 600
