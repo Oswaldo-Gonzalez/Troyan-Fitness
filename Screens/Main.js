@@ -16,7 +16,7 @@ export default function Main({ navigation }) {
             />
         </SafeAreaView>    
                     
-        <TouchableOpacity onPress={()=> navigation.navigate("Login")}>
+        <TouchableOpacity onPress={()=> navigation.navigate("MainBrazo")}>
             <SafeAreaView style={styles.box}>
                 <ImageBackground source={ require('../assets/BrazoPecho.png') } resizeMode="cover" style={styles.image}>
                     <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Brazo y Pecho</Text>
@@ -24,7 +24,7 @@ export default function Main({ navigation }) {
             </SafeAreaView>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=> navigation.navigate("Login")}>
+        <TouchableOpacity onPress={()=> navigation.navigate("MainAbdo")}>
             <SafeAreaView style={styles.box}>
                 <ImageBackground source={ require('../assets/Abdominales.png') } resizeMode="cover" style={styles.image}>
                     <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Abdominales</Text>
@@ -32,7 +32,7 @@ export default function Main({ navigation }) {
             </SafeAreaView>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=> navigation.navigate("Login")}>
+        <TouchableOpacity onPress={()=> navigation.navigate("MainHombro")}>
             <SafeAreaView style={styles.box}>
                 <ImageBackground source={ require('../assets/HombroEspalda.png') } resizeMode="cover" style={styles.image}>
                     <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Hombros y espalda</Text>
@@ -40,7 +40,7 @@ export default function Main({ navigation }) {
             </SafeAreaView>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=> navigation.navigate("Login")}>
+        <TouchableOpacity onPress={()=> navigation.navigate("MainPierna")}>
             <SafeAreaView style={styles.box}>
                 <ImageBackground source={ require('../assets/Piernas.png') } resizeMode="cover" style={styles.image}>
                     <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Piernas</Text>

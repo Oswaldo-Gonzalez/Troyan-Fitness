@@ -10,6 +10,10 @@ import Login from './Screens/Login';
 import Registro from './Screens/Registro';
 import Main from './Screens/Main';
 import Profile from './Screens/Profile';
+import MainBrazo from './Screens/MainBrazo';
+import MainAbdo from './Screens/MainAbdo';
+import MainHombro from './Screens/MainHombro';
+import MainPierna from './Screens/MainPierna';
 
 export default function App() {
   return (
@@ -19,6 +23,10 @@ export default function App() {
         <Stack.Screen name="Registro" component={Registro}/>
         <Stack.Screen name="Main" component={Main}/>
         <Stack.Screen name="Profile" component={Profile}/>
+        <Stack.Screen name="MainBrazo" component={MainBrazo}/>
+        <Stack.Screen name="MainAbdo" component={MainAbdo}/>
+        <Stack.Screen name="MainHombro" component={MainHombro}/>
+        <Stack.Screen name="MainPierna" component={MainPierna}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
