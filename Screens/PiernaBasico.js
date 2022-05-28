@@ -8,7 +8,7 @@ export default function Main({ navigation }) {
     <SafeAreaView style={styles.container}>
  
                     
-        <TouchableOpacity onPress={()=> navigation.navigate("PiernaBasico")}>
+        <TouchableOpacity>
             <SafeAreaView style={styles.box}>
                 <Image style={styles.image} source={require('../assets/star.png')} />
                 <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Básico</Text>
@@ -16,7 +16,7 @@ export default function Main({ navigation }) {
             </SafeAreaView>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=> navigation.navigate("Login")}>
+        <TouchableOpacity>
             <SafeAreaView style={styles.box}>
                 <Image style={styles.image} source={require('../assets/star2.png')} />
                 <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
+    alignItems: 'baseline',
     justifyContent: 'center',
   },
   input_login: {
@@ -58,15 +58,12 @@ const styles = StyleSheet.create({
 box:{
     backgroundColor: 'white',
     height: 120,
-    width: 300,
+    width: '100%',
     alignItems: 'center',
     alignContent: 'center',
     borderColor: 'black',
     borderWidth: 2,
-    borderRadius: 30,
-    marginBottom: 40,
-    marginLeft: 25,
-    marginRight: 25
+
 },
 image: {
     marginLeft: 25,
