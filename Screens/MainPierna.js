@@ -16,7 +16,7 @@ export default function Main({ navigation }) {
             </SafeAreaView>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=> navigation.navigate("Login")}>
+        <TouchableOpacity onPress={()=> navigation.navigate("PiernaAvanzado")}>
             <SafeAreaView style={styles.box}>
                 <Image style={styles.image} source={require('../assets/star2.png')} />
                 <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>

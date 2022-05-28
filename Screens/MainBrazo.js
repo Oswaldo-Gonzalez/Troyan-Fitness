@@ -8,7 +8,7 @@ export default function Main({ navigation }) {
     <SafeAreaView style={styles.container}>
  
                     
-        <TouchableOpacity onPress={()=> navigation.navigate("Login")}>
+        <TouchableOpacity onPress={()=> navigation.navigate("BrazoBasico")}>
             <SafeAreaView style={styles.box}>
                 <Image style={styles.image} source={require('../assets/star.png')} />
                 <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Básico</Text>
@@ -16,7 +16,7 @@ export default function Main({ navigation }) {
             </SafeAreaView>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=> navigation.navigate("Login")}>
+        <TouchableOpacity onPress={()=> navigation.navigate("BrazoAvanzado")}>
             <SafeAreaView style={styles.box}>
                 <Image style={styles.image} source={require('../assets/star2.png')} />
                 <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>
