@@ -7,6 +7,13 @@ export default function Main({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
  
+        <TouchableOpacity>
+            <SafeAreaView style={styles.box}>
+                <Image style={styles.image} source={require('../assets/star.png')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Básico</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>1:45</Text>
+            </SafeAreaView>
+        </TouchableOpacity>
                     
         <TouchableOpacity>
             <SafeAreaView style={styles.box}>
