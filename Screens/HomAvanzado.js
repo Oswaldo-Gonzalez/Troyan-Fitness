@@ -1,61 +1,78 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, Image, ImageBackground, TouchableOpacity,SafeAreaView } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons'
 
 
 export default function Main({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
- 
-                    
-        <TouchableOpacity>
-            <SafeAreaView style={styles.box}>
-                <Image style={styles.image} source={require('../assets/star.png')} />
-                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Básico</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>1:45</Text>
-            </SafeAreaView>
-        </TouchableOpacity>
+        <ScrollView>
+            <TouchableOpacity>
+                <SafeAreaView style={styles.box}>
+                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Salto tijera</Text>
+                    <Text style={{fontSize: 20, color: 'black'}}>00:07</Text>
+                </SafeAreaView>
+            </TouchableOpacity>
 
-        <TouchableOpacity>
-            <SafeAreaView style={styles.box}>
-                <Image style={styles.image} source={require('../assets/star2.png')} />
-                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>3:15</Text>
-            </SafeAreaView>
-        </TouchableOpacity>
+            <TouchableOpacity>
+                <SafeAreaView style={styles.box}>
+                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Tijera Brazo</Text>
+                    <Text style={{fontSize: 20, color: 'black'}}>00:08</Text>
+                </SafeAreaView>
+            </TouchableOpacity>
+                        
+            <TouchableOpacity>
+                <SafeAreaView style={styles.box}>
+                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Elevación lateral</Text>
+                    <Text style={{fontSize: 20, color: 'black'}}>00:11</Text>
+                </SafeAreaView>
+            </TouchableOpacity>
 
-        <TouchableOpacity>
-            <SafeAreaView style={styles.box}>
-                <Image style={styles.image} source={require('../assets/star2.png')} />
-                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>3:15</Text>
-            </SafeAreaView>
-        </TouchableOpacity>
+            <TouchableOpacity>
+                <SafeAreaView style={styles.box}>
+                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Tracción Romboide</Text>
+                    <Text style={{fontSize: 20, color: 'black'}}>00:10</Text>
+                </SafeAreaView>
+            </TouchableOpacity>
 
-        <TouchableOpacity>
-            <SafeAreaView style={styles.box}>
-                <Image style={styles.image} source={require('../assets/star2.png')} />
-                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>3:15</Text>
-            </SafeAreaView>
-        </TouchableOpacity>
+            <TouchableOpacity>
+                <SafeAreaView style={styles.box}>
+                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Flexiones con apoyo</Text>
+                    <Text style={{fontSize: 20, color: 'black'}}>00:10</Text>
+                </SafeAreaView>
+            </TouchableOpacity>
 
-        <TouchableOpacity>
-            <SafeAreaView style={styles.box}>
-                <Image style={styles.image} source={require('../assets/star2.png')} />
-                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>3:15</Text>
-            </SafeAreaView>
-        </TouchableOpacity>
+            <TouchableOpacity>
+                <SafeAreaView style={styles.box}>
+                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Elevación lateral</Text>
+                    <Text style={{fontSize: 20, color: 'black'}}>00:11</Text>
+                </SafeAreaView>
+            </TouchableOpacity>
 
-        <TouchableOpacity>
-            <SafeAreaView style={styles.box}>
-                <Image style={styles.image} source={require('../assets/star2.png')} />
-                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>3:15</Text>
-            </SafeAreaView>
-        </TouchableOpacity>
+            <TouchableOpacity>
+                <SafeAreaView style={styles.box}>
+                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Posición Gato-Vaca</Text>
+                    <Text style={{fontSize: 20, color: 'black'}}>00:29</Text>
+                </SafeAreaView>
+            </TouchableOpacity>
 
+            <TouchableOpacity>
+                <SafeAreaView style={styles.box}>
+                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Posición de bebé</Text>
+                    <Text style={{fontSize: 20, color: 'black'}}>00:30</Text>
+                </SafeAreaView>
+            </TouchableOpacity>
+            
+        </ScrollView>
     </SafeAreaView>
   );
 }
@@ -66,17 +83,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '100%',
-  },
-  input_login: {
-    width:'90%', 
-    height: 55, 
-    borderColor: 'rgba(0, 0, 0, 0.5)',
-    borderWidth:1,
-    borderRadius:10,
-    fontSize: 22,
-    paddingLeft: 10,
-    marginBottom:20,
   },
   header:{
     fontSize:30, 
@@ -89,16 +95,18 @@ box:{
     height: 90,
     width: 360,
     alignItems: 'center',
-    alignContent: 'center',
+    //alignContent: 'center',
     borderColor: 'black',
     borderWidth: 2,
 
 },
 image: {
-    marginLeft: 25,
-    marginTop: 30,
-    marginRight:240,
+    marginLeft: 240,
+    marginTop: 10,
+    marginRight:-50,
     height: 50,
     width: 50,
+    borderColor: 'rgba(0, 0, 0, 0.5)',
+    borderWidth:1,
 },
 });
