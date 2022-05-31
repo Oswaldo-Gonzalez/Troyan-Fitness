@@ -10,7 +10,7 @@ export default function Main({ navigation }) {
         <ScrollView>
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/saltoT.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Salto tijera</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:07</Text>
                 </SafeAreaView>
@@ -18,7 +18,7 @@ export default function Main({ navigation }) {
                         
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/Sentadillas.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Sentadillas</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:15</Text>
                 </SafeAreaView>
@@ -26,7 +26,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/gluteoiz.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Gluteo costado Izquierda</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:13</Text>
                 </SafeAreaView>
@@ -34,7 +34,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/gluteode.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Gluteo costado Derecha</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:13</Text>
                 </SafeAreaView>
@@ -42,7 +42,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/zancada.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Zancada</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:12</Text>
                 </SafeAreaView>
@@ -50,7 +50,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/gluteopa.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Gluteo Patada</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:17</Text>
                 </SafeAreaView>
@@ -58,7 +58,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/estpan.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Estiramiento Pantorrilla</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:44</Text>
                 </SafeAreaView>
@@ -100,5 +100,12 @@ image: {
     width: 50,
     borderColor: 'rgba(0, 0, 0, 0.5)',
     borderWidth:1,
+    resizeMode:'stretch'
+
 },
+image2: {
+    marginTop:-220,
+    height: 100,
+    width: '100%',
+  },
 });

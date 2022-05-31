@@ -15,7 +15,7 @@ export default function Main({ navigation }) {
         <ScrollView>
             <TouchableOpacity onPress={() => setModalVisible(true)}>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/saltoT.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Salto tijera</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:07</Text>
                     <Modal 
@@ -42,7 +42,7 @@ export default function Main({ navigation }) {
                         
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/flexin.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Flexiones con inclinación</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:19</Text>
                 </SafeAreaView>
@@ -50,7 +50,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/flexcaja.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Flexiones en caja</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:12</Text>
                 </SafeAreaView>
@@ -58,7 +58,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/flex.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Flexiones</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:07</Text>
                 </SafeAreaView>
@@ -66,7 +66,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/flexin.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Flexiones con inclinación</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:19</Text>
                 </SafeAreaView>
@@ -74,7 +74,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/flexap.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Flexiones con apoyo</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:10</Text>
                 </SafeAreaView>
@@ -82,7 +82,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/cobra.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Estiramiento Cobra</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:20</Text>
                 </SafeAreaView>

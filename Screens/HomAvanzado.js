@@ -10,7 +10,7 @@ export default function Main({ navigation }) {
         <ScrollView>
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/saltoT.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Salto tijera</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:07</Text>
                 </SafeAreaView>
@@ -18,7 +18,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/tijeba.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Tijera Brazo</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:08</Text>
                 </SafeAreaView>
@@ -26,7 +26,7 @@ export default function Main({ navigation }) {
                         
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/elela.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Elevación lateral</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:11</Text>
                 </SafeAreaView>
@@ -34,7 +34,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/rom.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Tracción Romboide</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:10</Text>
                 </SafeAreaView>
@@ -42,7 +42,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/flexap.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Flexiones con apoyo</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:10</Text>
                 </SafeAreaView>
@@ -50,7 +50,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/elela.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Elevación lateral</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:11</Text>
                 </SafeAreaView>
@@ -58,7 +58,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/gato.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Posición Gato-Vaca</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:29</Text>
                 </SafeAreaView>
@@ -66,7 +66,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/bebe.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Posición de bebé</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:30</Text>
                 </SafeAreaView>
@@ -108,5 +108,7 @@ image: {
     width: 50,
     borderColor: 'rgba(0, 0, 0, 0.5)',
     borderWidth:1,
+    resizeMode:'stretch'
+
 },
 });

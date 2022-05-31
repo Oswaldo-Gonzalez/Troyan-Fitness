@@ -8,9 +8,9 @@ export default function Main({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
         <ScrollView>
-            <TouchableOpacity>
+        <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/saltoT.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Salto tijera</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:07</Text>
                 </SafeAreaView>
@@ -18,7 +18,7 @@ export default function Main({ navigation }) {
                         
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/crunch.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Crunch</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:15</Text>
                 </SafeAreaView>
@@ -26,7 +26,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/esc.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Escalada</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:11</Text>
                 </SafeAreaView>
@@ -34,7 +34,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/elepe.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Elevación de Piernas</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:15</Text>
                 </SafeAreaView>
@@ -42,7 +42,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/twist.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Twist</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:08</Text>
                 </SafeAreaView>
@@ -50,7 +50,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/esc.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Escalada</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:11</Text>
                 </SafeAreaView>
@@ -58,15 +58,15 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
-                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Tabla</Text>
+                    <Image style={styles.image} source={require('../assets/Gifs/tabla.gif')} />
+                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Tablon</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:03</Text>
                 </SafeAreaView>
             </TouchableOpacity>
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/cobra.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Estiramiento Cobra</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:20</Text>
                 </SafeAreaView>
@@ -74,7 +74,7 @@ export default function Main({ navigation }) {
 
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/star2.png')} />
+                    <Image style={styles.image} source={require('../assets/Gifs/estpe.png')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Estiramiento de Pecho</Text>
                     <Text style={{fontSize: 20, color: 'black'}}>00:14</Text>
                 </SafeAreaView>
@@ -114,7 +114,7 @@ image: {
     marginRight:-50,
     height: 50,
     width: 50,
-    borderColor: 'rgba(0, 0, 0, 0.5)',
-    borderWidth:1,
+    resizeMode:'stretch'
+
 },
 });

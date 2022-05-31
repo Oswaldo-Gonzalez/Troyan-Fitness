@@ -5,9 +5,18 @@ import Icon from 'react-native-vector-icons/Ionicons'
 
 export default function Main({ navigation }) {
   return (
-    <SafeAreaView style={styles.container}>
- 
-                    
+    <SafeAreaView style={styles.container}>       
+
+      <SafeAreaView style={{flexDirection: 'row', justifyContent: 'flex-start', justifyContent: 'center', width:'100%'}}>
+            <ImageBackground source={ require('../assets/HombroEspalda.png') } resizeMode="cover" style={styles.image2}>
+                <Text style={{fontSize: 30, color: 'white', paddingLeft: 75, marginTop:20}}>Hombro y Espalda</Text>
+                <Icon style={{position:'absolute', right:300,top:20 , color:'white'}}
+                  name='arrow-back'
+                  size={50}
+                  onPress={()=> navigation.navigate("Main")}
+                />
+            </ImageBackground>
+        </SafeAreaView>
         <TouchableOpacity onPress={()=> navigation.navigate("HomBasico")}>
             <SafeAreaView style={styles.box}>
                 <Image style={styles.image} source={require('../assets/star.png')} />
@@ -74,5 +83,10 @@ image: {
     marginRight:240,
     height: 50,
     width: 50,
+},
+image2: {
+  marginTop:-220,
+  height: 100,
+  width: '100%',
 },
 });

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TextInput, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -26,15 +26,15 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login}/>
-        <Stack.Screen name="Registro" component={Registro}/>
-        <Stack.Screen name="Main" component={Main}/>
+        <Stack.Screen name="Login" component={Login} options={{ headerShown: false }}/>
+        <Stack.Screen name="Registro" component={Registro} options={{ headerShown: false }}/>
+        <Stack.Screen name="Main" component={Main} options={{ headerShown: false }}/>
         <Stack.Screen name="Profile" component={Profile}/>
-        <Stack.Screen name="MainBrazo" component={MainBrazo}/>
-        <Stack.Screen name="MainAbdo" component={MainAbdo}/>
-        <Stack.Screen name="MainHombro" component={MainHombro}/>
-        <Stack.Screen name="MainPierna" component={MainPierna}/>
-        <Stack.Screen name="PiernaBasico" component={PiernaBasico}/>
+        <Stack.Screen name="MainBrazo" component={MainBrazo} options={{ headerShown: false }}/>
+        <Stack.Screen name="MainAbdo" component={MainAbdo} options={{ headerShown: false }}/>
+        <Stack.Screen name="MainHombro" component={MainHombro} options={{ headerShown: false }}/>
+        <Stack.Screen name="MainPierna" component={MainPierna} options={{ headerShown: false }}/>
+        <Stack.Screen name="PiernaBasico" component={PiernaBasico} />
         <Stack.Screen name="PiernaAvanzado" component={PiernaAvanzado}/>
         <Stack.Screen name="BrazoBasico" component={BrazoBasico}/>
         <Stack.Screen name="BrazoAvanzado" component={BrazoAvanzado}/>

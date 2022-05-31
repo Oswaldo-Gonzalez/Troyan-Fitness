@@ -6,7 +6,16 @@ import Icon from 'react-native-vector-icons/Ionicons'
 export default function Main({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
- 
+        <SafeAreaView style={{flexDirection: 'row', justifyContent: 'flex-start', justifyContent: 'center', width:'100%'}}>
+            <ImageBackground source={ require('../assets/BrazoPecho.png') } resizeMode="cover" style={styles.image2}>
+                <Text style={{fontSize: 30, color: 'white', paddingLeft: 100, marginTop:20}}>Brazo y Pecho</Text>
+                <Icon style={{position:'absolute', right:300,top:20 , color:'white'}}
+                  name='arrow-back'
+                  size={50}
+                  onPress={()=> navigation.navigate("Main")}
+                />
+            </ImageBackground>
+        </SafeAreaView>
                     
         <TouchableOpacity onPress={()=> navigation.navigate("BrazoBasico")}>
             <SafeAreaView style={styles.box}>
@@ -74,5 +83,10 @@ image: {
     marginRight:240,
     height: 50,
     width: 50,
+},
+image2: {
+  marginTop:-220,
+  height: 100,
+  width: '100%',
 },
 });
