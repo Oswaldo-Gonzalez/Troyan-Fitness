@@ -7,6 +7,16 @@ import Icon from 'react-native-vector-icons/Ionicons'
 export default function Main({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
+        <SafeAreaView style={{justifyContent: 'flex-start', justifyContent: 'center', width:'100%'}}>
+            <ImageBackground source={ require('../assets/HombroEspalda.png') } resizeMode="cover" style={styles.image2}>
+                <Text style={{fontSize: 30, color: 'white', paddingLeft: 75, marginTop:20}}>Hombro y Espalda</Text>
+                <Icon style={{position:'absolute', right:300,top:20 , color:'white'}}
+                name='arrow-back'
+                size={50}
+                onPress={()=> navigation.navigate("MainHombro")}
+                />
+            </ImageBackground>
+        </SafeAreaView>
         <ScrollView>
             <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
@@ -111,4 +121,9 @@ image: {
     resizeMode:'stretch'
 
 },
+image2: {
+    marginTop:0,
+    height: 100,
+    width: '100%',
+  },
 });

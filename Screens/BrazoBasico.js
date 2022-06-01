@@ -12,6 +12,16 @@ export default function Main({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
+        <SafeAreaView style={{flexDirection: 'row', justifyContent: 'flex-start', justifyContent: 'center', width:'100%'}}>
+            <ImageBackground source={ require('../assets/BrazoPecho.png') } resizeMode="cover" style={styles.image2}>
+                <Text style={{fontSize: 30, color: 'white', paddingLeft: 100, marginTop:20}}>Brazo y Pecho</Text>
+                <Icon style={{position:'absolute', right:300,top:20 , color:'white'}}
+                  name='arrow-back'
+                  size={50}
+                  onPress={()=> navigation.navigate("MainBrazo")}
+                />
+            </ImageBackground>
+        </SafeAreaView>
         <ScrollView>
             <TouchableOpacity onPress={() => setModalVisible(true)}>
                 <SafeAreaView style={styles.box}>
@@ -150,5 +160,10 @@ centeredView: {
     color: "white",
     fontWeight: "bold",
     textAlign: "center"
+  },
+  image2: {
+    marginTop:0,
+    height: 100,
+    width: '100%',
   },
 });

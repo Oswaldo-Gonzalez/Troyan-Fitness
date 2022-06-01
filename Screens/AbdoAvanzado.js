@@ -7,8 +7,18 @@ import Icon from 'react-native-vector-icons/Ionicons'
 export default function Main({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
+        <SafeAreaView style={{flexDirection: 'row', justifyContent: 'flex-start', justifyContent: 'center', width:'100%'}}>
+            <ImageBackground source={ require('../assets/Abdominales.png') } resizeMode="cover" style={styles.image2}>
+                <Text style={{fontSize: 30, color: 'white', paddingLeft: 100, marginTop:20}}>Abdominales</Text>
+                <Icon style={{position:'absolute', right:300,top:20 , color:'white'}}
+                  name='arrow-back'
+                  size={50}
+                  onPress={()=> navigation.navigate("MainAbdo")}
+                />
+            </ImageBackground>
+        </SafeAreaView>
         <ScrollView>
-        <TouchableOpacity>
+            <TouchableOpacity>
                 <SafeAreaView style={styles.box}>
                     <Image style={styles.image} source={require('../assets/Gifs/saltoT.gif')} />
                     <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Salto tijera</Text>
@@ -117,4 +127,9 @@ image: {
     resizeMode:'stretch'
 
 },
+image2: {
+    marginTop:0,
+    height: 100,
+    width: '100%',
+  },
 });

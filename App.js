@@ -29,19 +29,19 @@ export default function App() {
         <Stack.Screen name="Login" component={Login} options={{ headerShown: false }}/>
         <Stack.Screen name="Registro" component={Registro} options={{ headerShown: false }}/>
         <Stack.Screen name="Main" component={Main} options={{ headerShown: false }}/>
-        <Stack.Screen name="Profile" component={Profile}/>
+        <Stack.Screen name="Profile" component={Profile} options={{ headerShown: false }}/>
         <Stack.Screen name="MainBrazo" component={MainBrazo} options={{ headerShown: false }}/>
         <Stack.Screen name="MainAbdo" component={MainAbdo} options={{ headerShown: false }}/>
         <Stack.Screen name="MainHombro" component={MainHombro} options={{ headerShown: false }}/>
         <Stack.Screen name="MainPierna" component={MainPierna} options={{ headerShown: false }}/>
-        <Stack.Screen name="PiernaBasico" component={PiernaBasico} />
-        <Stack.Screen name="PiernaAvanzado" component={PiernaAvanzado}/>
-        <Stack.Screen name="BrazoBasico" component={BrazoBasico}/>
-        <Stack.Screen name="BrazoAvanzado" component={BrazoAvanzado}/>
-        <Stack.Screen name="AbdoBasico" component={AbdoBasico}/>
-        <Stack.Screen name="AbdoAvanzado" component={AbdoAvanzado}/>
-        <Stack.Screen name="HomBasico" component={HomBasico}/>
-        <Stack.Screen name="HomAvanzado" component={HomAvanzado}/>
+        <Stack.Screen name="PiernaBasico" component={PiernaBasico} options={{ headerShown: false }}/>
+        <Stack.Screen name="PiernaAvanzado" component={PiernaAvanzado} options={{ headerShown: false }}/>
+        <Stack.Screen name="BrazoBasico" component={BrazoBasico} options={{ headerShown: false }}/>
+        <Stack.Screen name="BrazoAvanzado" component={BrazoAvanzado} options={{ headerShown: false }}/>
+        <Stack.Screen name="AbdoBasico" component={AbdoBasico} options={{ headerShown: false }}/>
+        <Stack.Screen name="AbdoAvanzado" component={AbdoAvanzado} options={{ headerShown: false }}/>
+        <Stack.Screen name="HomBasico" component={HomBasico} options={{ headerShown: false }}/>
+        <Stack.Screen name="HomAvanzado" component={HomAvanzado} options={{ headerShown: false }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

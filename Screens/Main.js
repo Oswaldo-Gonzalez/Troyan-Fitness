@@ -8,7 +8,9 @@ import video from '../assets/video/Abdo1.mp4'
 export default function Main({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-
+        <SafeAreaView style={{flexDirection: 'row', width:'100%', height:50,backgroundColor:'black',marginTop:-65}}>
+            <Text style={{fontSize: 30, color: 'white', paddingLeft: 90,}}>Troyan Fitness</Text>
+        </SafeAreaView>
         <SafeAreaView style={{flexDirection: 'row', justifyContent: 'flex-end', justifyContent: 'center', width:'100%'}}>
             <Text style={styles.header}>Bienvenido</Text>
             <Icon style={{position:'absolute', right:'5%'}}
