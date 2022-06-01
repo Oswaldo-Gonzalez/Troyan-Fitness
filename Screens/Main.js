@@ -1,8 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Image, ImageBackground, TouchableOpacity,SafeAreaView } from 'react-native';
+import { StyleSheet, Text, ImageBackground, TouchableOpacity,SafeAreaView } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'
-import Video from 'react-native-video';
-import video from '../assets/video/Abdo1.mp4'
 
 
 export default function Main({ navigation }) {

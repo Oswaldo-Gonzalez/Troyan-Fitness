@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Image, ImageBackground, TouchableOpacity,SafeAreaView } from 'react-native';
+import { StyleSheet, Text, Image, ImageBackground, TouchableOpacity,SafeAreaView } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'
 
 
