@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Image } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import CustomButtom from '../components/CustomButtom';
 
@@ -11,6 +12,9 @@ export default function App({ navigation }) {
 
   return (
     <View style={styles.container}>
+      <SafeAreaView style={{flexDirection: 'row', width:'100%', height:70,backgroundColor:'black',marginTop:-317,}}>
+            <Image style={styles.image} source={require('../assets/logo.png')} />
+      </SafeAreaView>
       <Text style={styles.login_header}>Registrar</Text>
       <TextInput style={styles.input_login} placeholder="Correo Electronico" />
       <TextInput style={styles.input_login} placeholder="Usuario" />
@@ -44,5 +48,11 @@ const styles = StyleSheet.create({
     fontSize:40, 
     marginBottom:40, 
     fontWeight:'bold'
-  }
+  },
+  image: {
+    marginTop:-27,
+    marginLeft:140,
+    height:70,
+    width: 70,
+},
 });

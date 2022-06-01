@@ -21,7 +21,7 @@ export default function Main({ navigation }) {
             <SafeAreaView style={styles.box}>
                 <Image style={styles.image} source={require('../assets/star.png')} />
                 <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Básico</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>1:45</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>1:51</Text>
             </SafeAreaView>
         </TouchableOpacity>
 
@@ -29,7 +29,7 @@ export default function Main({ navigation }) {
             <SafeAreaView style={styles.box}>
                 <Image style={styles.image} source={require('../assets/star2.png')} />
                 <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>3:15</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>1:59</Text>
             </SafeAreaView>
         </TouchableOpacity>
 

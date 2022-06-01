@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Image, ImageBackground, TouchableOpacity,SafeAreaView } from 'react-native';
+import { StyleSheet, Text, Image, ImageBackground, TouchableOpacity,SafeAreaView } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons'
 
@@ -18,79 +17,67 @@ export default function Main({ navigation }) {
             </ImageBackground>
         </SafeAreaView>
         <ScrollView>
-            <TouchableOpacity>
-                <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/Gifs/saltoT.gif')} />
-                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Salto tijera</Text>
-                    <Text style={{fontSize: 20, color: 'black'}}>00:07</Text>
-                </SafeAreaView>
-            </TouchableOpacity>
-                        
-            <TouchableOpacity>
-                <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/Gifs/crunch.gif')} />
-                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Crunch</Text>
-                    <Text style={{fontSize: 20, color: 'black'}}>00:15</Text>
-                </SafeAreaView>
-            </TouchableOpacity>
-
-            <TouchableOpacity>
-                <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/Gifs/esc.gif')} />
-                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Escalada</Text>
-                    <Text style={{fontSize: 20, color: 'black'}}>00:11</Text>
-                </SafeAreaView>
-            </TouchableOpacity>
-
-            <TouchableOpacity>
-                <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/Gifs/elepe.gif')} />
-                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Elevación de Piernas</Text>
-                    <Text style={{fontSize: 20, color: 'black'}}>00:15</Text>
-                </SafeAreaView>
-            </TouchableOpacity>
-
-            <TouchableOpacity>
-                <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/Gifs/twist.gif')} />
-                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Twist</Text>
-                    <Text style={{fontSize: 20, color: 'black'}}>00:08</Text>
-                </SafeAreaView>
-            </TouchableOpacity>
-
-            <TouchableOpacity>
-                <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/Gifs/esc.gif')} />
-                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Escalada</Text>
-                    <Text style={{fontSize: 20, color: 'black'}}>00:11</Text>
-                </SafeAreaView>
-            </TouchableOpacity>
-
-            <TouchableOpacity>
-                <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/Gifs/tabla.gif')} />
-                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Tablon</Text>
-                    <Text style={{fontSize: 20, color: 'black'}}>00:03</Text>
-                </SafeAreaView>
-            </TouchableOpacity>
-
-            <TouchableOpacity>
-                <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/Gifs/cobra.gif')} />
-                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Estiramiento Cobra</Text>
-                    <Text style={{fontSize: 20, color: 'black'}}>00:20</Text>
-                </SafeAreaView>
-            </TouchableOpacity>
-
-            <TouchableOpacity>
-                <SafeAreaView style={styles.box}>
-                    <Image style={styles.image} source={require('../assets/Gifs/estpe.png')} />
-                    <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Estiramiento de Pecho</Text>
-                    <Text style={{fontSize: 20, color: 'black'}}>00:14</Text>
-                </SafeAreaView>
-            </TouchableOpacity>
+             
+            <SafeAreaView style={styles.box}>
+                <Image style={styles.image} source={require('../assets/Gifs/saltoT.gif')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Salto tijera</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>00:07</Text>
+            </SafeAreaView>
             
+            <SafeAreaView style={styles.box}>
+                <Image style={styles.image} source={require('../assets/Gifs/crunch.gif')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Crunch</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>00:15</Text>
+            </SafeAreaView>
+            
+            <SafeAreaView style={styles.box}>
+                <Image style={styles.image} source={require('../assets/Gifs/esc.gif')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Escalada</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>00:11</Text>
+            </SafeAreaView>
+            
+            <SafeAreaView style={styles.box}>
+                <Image style={styles.image} source={require('../assets/Gifs/elepe.gif')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Elevación de Piernas</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>00:15</Text>
+            </SafeAreaView>
+            
+            <SafeAreaView style={styles.box}>
+                <Image style={styles.image} source={require('../assets/Gifs/twist.gif')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Twist</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>00:08</Text>
+            </SafeAreaView>
+            
+            <SafeAreaView style={styles.box}>
+                <Image style={styles.image} source={require('../assets/Gifs/esc.gif')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Escalada</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>00:11</Text>
+            </SafeAreaView>
+            
+            <SafeAreaView style={styles.box}>
+                <Image style={styles.image} source={require('../assets/Gifs/tabla.gif')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Tablon</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>00:03</Text>
+            </SafeAreaView>
+            
+            <SafeAreaView style={styles.box}>
+                <Image style={styles.image} source={require('../assets/Gifs/cobra.gif')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Estiramiento Cobra</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>00:20</Text>
+            </SafeAreaView>
+            
+            <SafeAreaView style={styles.box}>
+                <Image style={styles.image} source={require('../assets/Gifs/estpe.png')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Estiramiento de Pecho</Text>
+                <Text style={{fontSize: 20, color: 'black'}}>00:14</Text>
+            </SafeAreaView>
+             
         </ScrollView>
+        <TouchableOpacity style={{alignItems:'center',width:'100%', height:70, backgroundColor:'black'}}  onPress={()=> navigation.navigate("Main")}>
+            <SafeAreaView>
+                <Text style={{fontSize: 30, color: 'white',marginTop:10,}}>Finalizar</Text>
+            </SafeAreaView>
+        </TouchableOpacity>
     </SafeAreaView>
   );
 }
@@ -101,12 +88,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  header:{
-    fontSize:30, 
-    marginBottom:40, 
-    marginTop:5,
-    fontWeight:'bold',
   },
 box:{
     backgroundColor: 'white',
