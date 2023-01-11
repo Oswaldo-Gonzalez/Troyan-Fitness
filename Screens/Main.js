@@ -1,11 +1,13 @@
 import { StyleSheet, Text, ImageBackground, TouchableOpacity,SafeAreaView } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons'
+import { ScrollView } from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/Ionicons';
+import { Dimensions } from 'react-native';
 
 
 export default function Main({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-        <SafeAreaView style={{flexDirection: 'row', width:'100%', height:50,backgroundColor:'black',marginTop:-65}}>
+        <SafeAreaView style={{flexDirection: 'row', width:'100%', height:50,backgroundColor:'black', marginTop: 20}}>
             <Text style={{fontSize: 30, color: 'white', paddingLeft: 90,}}>Troyan Fitness</Text>
         </SafeAreaView>
         <SafeAreaView style={{flexDirection: 'row', justifyContent: 'flex-end', justifyContent: 'center', width:'100%'}}>
@@ -15,39 +17,50 @@ export default function Main({ navigation }) {
                 size={50}
                 onPress={()=> navigation.navigate("Profile")}
             />
-        </SafeAreaView>    
-                    
-        <TouchableOpacity onPress={()=> navigation.navigate("MainBrazo")}>
-            <SafeAreaView style={styles.box}>
-                <ImageBackground source={ require('../assets/BrazoPecho.png') } resizeMode="cover" style={styles.image}>
-                    <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Brazo y Pecho</Text>
-                </ImageBackground>
-            </SafeAreaView>
-        </TouchableOpacity>
+        </SafeAreaView>
 
-        <TouchableOpacity onPress={()=> navigation.navigate("MainAbdo")}>
-            <SafeAreaView style={styles.box}>
-                <ImageBackground source={ require('../assets/Abdominales.png') } resizeMode="cover" style={styles.image}>
-                    <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Abdominales</Text>
-                </ImageBackground>
-            </SafeAreaView>
-        </TouchableOpacity>
+        <ScrollView>            
+            <TouchableOpacity onPress={()=> navigation.navigate("MainBrazo")}>
+                <SafeAreaView style={styles.box}>
+                    <ImageBackground source={ require('../assets/BrazoPecho.png') } resizeMode="cover" style={styles.image} imageStyle={{borderRadius: 30}}>
+                        <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Brazo y Pecho</Text>
+                    </ImageBackground>
+                </SafeAreaView>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=> navigation.navigate("MainHombro")}>
-            <SafeAreaView style={styles.box}>
-                <ImageBackground source={ require('../assets/HombroEspalda.png') } resizeMode="cover" style={styles.image}>
-                    <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Hombros y espalda</Text>
-                </ImageBackground>
-            </SafeAreaView>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate("MainAbdo")}>
+                <SafeAreaView style={styles.box}>
+                    <ImageBackground source={ require('../assets/Abdominales.png') } resizeMode="cover" style={styles.image} imageStyle={{borderRadius: 30}}>
+                        <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Abdominales</Text>
+                    </ImageBackground>
+                </SafeAreaView>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=> navigation.navigate("MainPierna")}>
-            <SafeAreaView style={styles.box}>
-                <ImageBackground source={ require('../assets/Piernas.png') } resizeMode="cover" style={styles.image}>
-                    <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Piernas</Text>
-                </ImageBackground>
-            </SafeAreaView>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate("MainHombro")}>
+                <SafeAreaView style={styles.box}>
+                    <ImageBackground source={ require('../assets/HombroEspalda.png') } resizeMode="cover" style={styles.image} imageStyle={{borderRadius: 30}}>
+                        <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Hombros y espalda</Text>
+                    </ImageBackground>
+                </SafeAreaView>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={()=> navigation.navigate("MainPierna")}>
+                <SafeAreaView style={styles.box}>
+                    <ImageBackground source={ require('../assets/Piernas.png') } resizeMode="cover" style={styles.image} imageStyle={{borderRadius: 30}}>
+                        <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Piernas</Text>
+                    </ImageBackground>
+                </SafeAreaView>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={()=> navigation.navigate("Nutricion")}>
+                <SafeAreaView style={styles.box}>
+                    <ImageBackground source={ require('../assets/Alimentacion.jpg') } resizeMode="cover" style={styles.image} imageStyle={{borderRadius: 30}}>
+                        <Text style={{fontSize: 20, color: 'white', paddingRight: 50, paddingLeft: 25}}>Nutrición</Text>
+                    </ImageBackground>
+                </SafeAreaView>
+            </TouchableOpacity>
+        </ScrollView>
+
     </SafeAreaView>
   );
 }

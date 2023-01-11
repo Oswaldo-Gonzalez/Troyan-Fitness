@@ -18,17 +18,15 @@ export default function Main({ navigation }) {
         </SafeAreaView>
         <TouchableOpacity onPress={()=> navigation.navigate("HomBasico")}>
             <SafeAreaView style={styles.box}>
-                <Image style={styles.image} source={require('../assets/star.png')} />
-                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Básico</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>1:51</Text>
+                <Image style={styles.image} source={require('../assets/espaldabasico.png')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-40}}>Nivel Básico</Text>
             </SafeAreaView>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=> navigation.navigate("HomAvanzado")}>
             <SafeAreaView style={styles.box}>
-                <Image style={styles.image} source={require('../assets/star2.png')} />
-                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>1:59</Text>
+                <Image style={styles.image} source={require('../assets/espaldaavanzado.png')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-40}}>Nivel Avanzado</Text>
             </SafeAreaView>
         </TouchableOpacity>
 

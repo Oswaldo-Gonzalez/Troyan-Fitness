@@ -18,17 +18,15 @@ export default function Main({ navigation }) {
                     
         <TouchableOpacity onPress={()=> navigation.navigate("AbdoBasico")}>
             <SafeAreaView style={styles.box}>
-                <Image style={styles.image} source={require('../assets/star.png')} />
-                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Básico</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>1:22</Text>
+                <Image style={styles.image} source={require('../assets/abdomenbasico.png')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-40}}>Nivel Básico</Text>
             </SafeAreaView>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=> navigation.navigate("AbdoAvanzado")}>
             <SafeAreaView style={styles.box}>
-                <Image style={styles.image} source={require('../assets/star2.png')} />
-                <Text style={{fontSize: 20, color: 'black', marginTop:-50}}>Nivel Avanzado</Text>
-                <Text style={{fontSize: 20, color: 'black'}}>1:49</Text>
+                <Image style={styles.image} source={require('../assets/abdomenavanzado.png')} />
+                <Text style={{fontSize: 20, color: 'black', marginTop:-40}}>Nivel Avanzado</Text>
             </SafeAreaView>
         </TouchableOpacity>
 

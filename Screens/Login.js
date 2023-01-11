@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Dimensions } from 'react-native';
 
 import CustomButtom from '../components/CustomButtom';
 
@@ -55,8 +56,8 @@ const styles = StyleSheet.create({
   },
   image: {
     marginTop:-27,
-    marginLeft:140,
-    height:70,
+    marginLeft: Dimensions.get('window').width*0.41,
+    height: 70,
     width: 70,
 },
 });

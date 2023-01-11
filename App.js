@@ -22,6 +22,7 @@ import AbdoBasico from './Screens/AbdoBasico';
 import AbdoAvanzado from './Screens/AbdoAvanzado';
 import HomBasico from './Screens/HomBasico';
 import HomAvanzado from './Screens/HomAvanzado';
+import Nutricion from './Screens/Nutricion'
 export default function App() {
   return (
     <NavigationContainer>
@@ -42,6 +43,7 @@ export default function App() {
         <Stack.Screen name="AbdoAvanzado" component={AbdoAvanzado} options={{ headerShown: false }}/>
         <Stack.Screen name="HomBasico" component={HomBasico} options={{ headerShown: false }}/>
         <Stack.Screen name="HomAvanzado" component={HomAvanzado} options={{ headerShown: false }}/>
+        <Stack.Screen name="Nutricion" component={Nutricion} options={{ headerShown: false }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
