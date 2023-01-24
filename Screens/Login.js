@@ -4,8 +4,31 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Dimensions } from 'react-native';
 
 import CustomButtom from '../components/CustomButtom';
+import { useState } from 'react';
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { initializeApp } from 'firebase/app'
+import { firebaseConfig } from '../firebase';
 
 export default function App({ navigation }) {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  const handleSignIn = () => {
+    signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential)=> {
+      console.log('Sesión iniciada')
+      const user = userCredential.user;
+      navigation.navigate("Main");
+      console.log(user)
+    })
+    .catch(error => {
+      console.log(error);
+    })
+  }
 
   function registro() {
       navigation.navigate("Registro");
@@ -20,10 +43,10 @@ export default function App({ navigation }) {
             <Image style={styles.image} source={require('../assets/logo.png')} />
       </SafeAreaView>
       <Text style={styles.login_header}>Iniciar Sesión</Text>
-      <TextInput style={styles.input_login} placeholder="Usuario" />
-      <TextInput style={styles.input_login} placeholder="Contraseña" secureTextEntry={true}/>
+      <TextInput style={styles.input_login} value={email} onChangeText={text => setEmail(text)} placeholder="Correo" />
+      <TextInput style={styles.input_login} value={password} onChangeText={text => setPassword(text)} placeholder="Contraseña" secureTextEntry={true}/>
       
-      <CustomButtom text={"Ingresar"} color={"black"} action={main}/>
+      <CustomButtom text={"Ingresar"} color={"black"} action={handleSignIn}/>
       <SafeAreaView></SafeAreaView>
       <CustomButtom text={"Registro"} color={"black"} action={registro}/>
 

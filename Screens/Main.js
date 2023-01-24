@@ -13,9 +13,9 @@ export default function Main({ navigation }) {
         <SafeAreaView style={{flexDirection: 'row', justifyContent: 'flex-end', justifyContent: 'center', width:'100%'}}>
             <Text style={styles.header}>Bienvenido</Text>
             <Icon style={{position:'absolute', right:'5%'}}
-                name='person-circle-outline'
+                name='log-out-outline'
                 size={50}
-                onPress={()=> navigation.navigate("Profile")}
+                onPress={()=> navigation.navigate("Login")}
             />
         </SafeAreaView>
 
